@@ -63,7 +63,18 @@ class Database {
     // Méthode pour sélectionner tous les enregistrements d'une table
     public function selectAll($tableName) {
         $sql = "SELECT * FROM " . $this->conn->real_escape_string($tableName);
-        return $this->query($sql);
+
+        $result = $this->query($sql);
+
+        $res = [];
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                array_push($res, $row);
+            }
+            return $res;
+        }
+
+        return false;
     }
 
     // Méthode pour fermer la connexion

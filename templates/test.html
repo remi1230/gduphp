@@ -1,0 +1,16 @@
+<?php $this->extend('base.html'); ?>
+
+<?php $this->section('title'); ?>
+Test
+<?php $this->endSection(); ?>
+
+<?php $this->section('content'); ?>
+<ul>
+    <?php foreach ($horaires as $horaire): ?>
+        <li>
+            <h3><?php echo htmlspecialchars($horaire['dayOfWeek']); ?></h3>
+            <p><?php echo htmlspecialchars($horaire['openTime']); ?></p>
+        </li>
+    <?php endforeach; ?>
+</ul>
+<?php $this->endSection(); ?>

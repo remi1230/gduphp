@@ -1,0 +1,140 @@
+:root{
+    --accueilChapeauBg: #eedede;
+    --accueilSchedulesBg: #ccc;
+    --accueilServicesBg: #eedede;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-image: url('/../../public/img/background.webp');
+}
+footer{
+    font-size: 12px;
+    margin-top: 50px;
+    padding: 25px 0 25px 25px;
+    background-color: #333;
+    color: white;
+    border-top: 1px #888 solid;
+    border-bottom: 1px #888 solid;
+}
+
+.center{
+    text-align: center;
+}
+.centerFlex{
+    display: flex;
+    justify-content: center;
+}
+.mTop10{
+    margin-top: 10px;
+}
+.mTop20{
+    margin-top: 20px;
+}
+.mBot20{
+    margin-bottom: 20px;
+}
+.ml23{
+    margin-left: 23px;
+}
+.ml100{
+    margin-left: 100px;
+}
+.justify{
+    text-align: justify;
+}
+.newsItem{
+    font-size: 14px;
+    color: #999;
+}
+.newsImg{
+    width: 20%;
+}
+
+#footer-content{
+    line-height: 8px;
+}
+#carouselClinic{
+    width: 421px;
+}
+#takeAppointmentButtonContainer{
+    text-align: left;
+    margin-left: 15px;
+}
+
+#connectButtonContainer{
+    text-align: right;
+    margin-left: -30px;
+}
+#takeAppointmentForm{
+    width: 666px;
+}
+#backOfficeTabContent{
+    padding: 15px;
+}
+#serviceTab{
+    margin-bottom: 163px;
+}
+#newsTab{
+    margin-bottom: 249px;
+}
+#schedulesTab{
+    margin-bottom: 341px;
+}
+#appointmentTab{
+    margin-bottom: 55px;
+}
+#patientTab{
+    margin-bottom: 207px;
+}
+#professionalTab{
+    margin-bottom: 3px;
+}
+#imagePreview{
+    width: 20%;
+    margin-bottom: 10px;
+    float: right;
+}
+#carouselInner{
+    border-radius: 9999px;
+}
+#accueilChapeau{
+    background-color: var(--accueilChapeauBg);
+}
+#schedulesAccueil{
+    background-color: var(--accueilSchedulesBg);
+    border-radius: 5px;
+}
+#schedulesAccueilCard{
+    border-radius: 5px;
+}
+#servicesAccueil{
+    background-color: var(--accueilServicesBg);
+}
+
+/* ****************** MENU****************** */
+#navigation-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#navigation-menu li {
+    float: left;
+}
+#navigation-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#navigation-menu li a:hover {
+    background-color: #111;
+}
+#appHeader{
+    margin-top: -15px;
+}
+
