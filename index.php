@@ -2,6 +2,7 @@
 // index.php
 
 require_once __DIR__ . '/src/controllers/AccueilController.php';
+require_once __DIR__ . '/src/controllers/CabinetController.php';
 require_once __DIR__ . '/src/controllers/TestController.php';
 
 $request = trim($_SERVER['REQUEST_URI'], '/');
@@ -13,6 +14,10 @@ if ($request == '') {
 switch ($request) {
     case 'accueil':
         $controller = new AccueilController();
+        $controller->index();
+        break;
+    case 'cabinet':
+        $controller = new CabinetController();
         $controller->index();
         break;
     case 'test':

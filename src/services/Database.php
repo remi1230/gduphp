@@ -12,10 +12,10 @@ class Database {
     // Constructeur pour initialiser les paramètres de connexion
     public function __construct($servername = 'localhost', $username = 'root', $password = 'root', $dbname = 'gduphp', $port = 3305) {
         $this->servername = $servername;
-        $this->username = $username;
-        $this->password = $password;
-        $this->dbname = $dbname;
-        $this->port = $port;
+        $this->username   = $username;
+        $this->password   = $password;
+        $this->dbname     = $dbname;
+        $this->port       = $port;
         $this->connect();
     }
 
